@@ -1,0 +1,52 @@
+{
+    "grid": {
+        "Δx": 0.002,
+        "pad_width_raw": 0.05
+    },
+    "run": {
+        "t_span": 1,
+        "Δt_reinitialize": 0.001,
+        "κ_boost": 1,
+        "Δt_raw": 0.5,
+        "n_band_width_raw": 30,
+        "n_record_steps": 1
+    },
+    "model": {
+        "type": "exponential-activation",
+        "β_ξt_πrelative": 0.35,
+        "Δt_slabfailure": 0.01,
+        "ξ_max": 1,
+        "ξ_min": 0.05,
+        "ξ_trend": 0.0,
+        "σ_ξ": 0.2,
+        "n_ξ": 2
+    },
+    "substrate": {
+        "type": "single-layer",
+        "η_upperlayer": 1,
+        "do_hardtop": true,
+        "nz_hardtop": 10,
+        "η_hardtopbase": 1e-20,
+        "do_hardbase": true
+    },
+    "surface": {
+        "type": "straight-line",
+        "steepness": 1000,
+        "n_pts": 3001,
+        "x_left": -0.1,
+        "x_right": 1
+    },
+    "analysis": {
+        "chpt_subset": [100, 1000, 50],
+        "chpt_i_max": 1000,
+        "chpt_method": "Binseg",
+        "chpt_n_filterwidth": 50,
+        "chpt_i_plot": 200,
+        "chpt_i_plot_offset": 50,
+        "chpt_which": 0
+    },
+    "viz": {
+        "pc_slicing": 10,
+        "pc_labeling": 5
+    }
+}

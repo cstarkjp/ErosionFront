@@ -1,0 +1,38 @@
+{
+    "front": {
+        "resolution": 0.004,
+        "σ_gradient_filter_raw": 20,
+        "choice_gradient_fn": "centered",
+        "pad_width_raw": 0.05,
+        "n_band_width_raw": 30,
+        "do_hardtop": false,
+        "do_hardbase": true
+    },
+    "surface": {
+        "n_pts": 3001,
+        "steepness": 20,
+        "x_left": -0.2,
+        "x_right": 1.5
+    },
+    "substrate": {
+        "η_ratio": 0.2,
+        "do_twolayer": false,
+        "do_midlayer": false,
+        "do_multilayer": false,
+        "multilayer_n_levels": "None",
+        "multilayer_dz": "None"
+    },
+    "model": {
+        "type": "step",
+        "ξ_trend": -0.00,
+        "ξ_min": 0.15,
+        "ξ_max": 1,
+        "β_ξt_raw": "pi*0.35",
+        "σ_ξ": 0.2
+    },
+    "run": {
+        "dt_raw": 5,
+        "t_span": 2,
+        "record_pc": 5
+    }
+}

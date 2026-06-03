@@ -7,22 +7,24 @@
 
 <div align="center">
 
-![Blender view of West Mitten Butte](Images/WestMittenButte/BlenderView1_reduced.png)
+![Blender view of West Mitten Butte](images/WestMittenButte/BlenderView1_reduced.png)
 
 </div>
 
  An iconic image of the American West is the mesa: a steep cliff, rising above a ramp-like rock slope, capped by a flat bench. This famous landform is thought to develop where strong rock overlies weak, and where rockfall debris buffers ramp erosion. However, this explanation is unnecessarily complicated. We instead argue that the archetypal geometry is an emergent property that arises even in uniform bedrock with no talus armouring. This assertion springs from a phenomenological model of scarp retreat, in which the combined speed of weathering and surface-normal erosion is a slowly varying function of gradient. Model analysis, using geometric mechanics and level sets, reveals the ramp-cliff transition to form automatically as a shock solution of a non-convex Hamilton-Jacobi equation (HJE). Erodibility contrasts are not needed to explain this behaviour, but when present they help lock the landform into its classic shape and allow it to persist long-term. Our theoretical conclusions are vindicated by 3D topographic analysis of differential cliff recession in geologically homogeneous material.
 
 
- ![Animated set of HJE solutions of ramp-cliff retreat for varying ratio of upper/lower rock layer erodibility](Simulation/Combo/combined_reversed.png?raw=true)
 
  ### Level-set solution of a geomorphic HJE
 
 The purpose of the Python code presented here is to derive, analyze, and numerically solve a geomorphic Hamiltonian[^1] model of rock slope erosion and retreat[^2]. The code is provided as a 
-[Python library package](Packages/erosionfront)
- and associated Jupyter notebooks (e.g., [here](Simulation/ErosionFront.ipynb) and  [here](Analysis/3DProfiling.ipynb)).
+[Python library package](src/erosionfront)
+ and associated Jupyter notebooks (e.g., [here](notebooks/simulation/ErosionFront.ipynb) and  [here](notebooks/analysis/3DProfiling.ipynb)).
 
-Numerical solution of the model Hamilton-Jacobi equation is achieved with a level-set scheme[^3] that employs Lax-Friedrichs finite differencing to obtain stable viscosity solutions for a non-convex Hamiltonian. The level-set code is custom implemented in Python and exploits [`scikit-fmm`](https://pythonhosted.org/scikit-fmm/) fast-marching for speedy computation of distance functions.
+
+ ![Animated set of HJE solutions of ramp-cliff retreat for varying ratio of upper/lower rock layer erodibility](notebooks/simulation/combo/time_slices_test_2layer_ηul0p2.png?raw=true)
+ 
+Numerical solution of the model Hamilton-Jacobi equation is achieved with a level-set scheme[^3] that employs Lax-Friedrichs finite differencing to obtain stable viscosity solutions for a non-convex Hamiltonian. The level-set code is custom implemented in Python.
 
 Model analysis is performed using geometric mechanics[^4]: having converted the rock-slope erosion model into geomorphic Hamiltonian $\mathcal{H}(\mathbf{p},\mathbf{r})$ form, this Hamiltonian is then used to derive Hamilton's ray tracing equations $(\partial_{\mathbf{p}}\mathcal{H}, -\partial_{\mathbf{r}}\mathcal{H})$ and the co-metric tensor $g^{ij} = \partial_{ij}\mathcal{H}$; these properties are then probed to understand model stability, notably to place bounds on the non-convexity of $\mathcal{H}$ and to identify critical angles.
 

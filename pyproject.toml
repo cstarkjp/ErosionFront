@@ -1,0 +1,9 @@
+[project]
+name = "erosionfront"
+version = "0.1.0"
+description = "Tools for simulating rock slope erosion and the emergent geometry of Richter slopes"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy", "matplotlib", "scipy", "shapely", "rasterio", "ruptures", "h5py"
+]
