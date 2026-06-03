@@ -7,7 +7,7 @@
 
 <div align="center">
 
-![Blender view of West Mitten Butte](images/WestMittenButte/BlenderView1_reduced.png)
+![Blender view of West Mitten Butte](images/WestMittenButte/BlenderView1_reduced.png?raw=true)
 
 </div>
 
@@ -23,7 +23,7 @@ The purpose of the Python code presented here is to derive, analyze, and numeric
 
 
  ![Animated set of HJE solutions of ramp-cliff retreat for varying ratio of upper/lower rock layer erodibility](notebooks/simulation/combo/time_slices_test_2layer_ηul0p2.png?raw=true)
- 
+
 Numerical solution of the model Hamilton-Jacobi equation is achieved with a level-set scheme[^3] that employs Lax-Friedrichs finite differencing to obtain stable viscosity solutions for a non-convex Hamiltonian. The level-set code is custom implemented in Python.
 
 Model analysis is performed using geometric mechanics[^4]: having converted the rock-slope erosion model into geomorphic Hamiltonian $\mathcal{H}(\mathbf{p},\mathbf{r})$ form, this Hamiltonian is then used to derive Hamilton's ray tracing equations $(\partial_{\mathbf{p}}\mathcal{H}, -\partial_{\mathbf{r}}\mathcal{H})$ and the co-metric tensor $g^{ij} = \partial_{ij}\mathcal{H}$; these properties are then probed to understand model stability, notably to place bounds on the non-convexity of $\mathcal{H}$ and to identify critical angles.
