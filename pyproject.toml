@@ -1,6 +1,6 @@
 [project]
 name = "erosionfront"
-version = "0.1.12"
+version = "0.1.13"
 description = "Tools for simulating rock slope erosion and the emergent geometry of Richter slopes"
 readme = "README.md"
 classifiers = [
