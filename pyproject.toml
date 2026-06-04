@@ -1,6 +1,6 @@
 [project]
 name = "erosionfront"
-version = "0.1.17"
+version = "0.1.18"
 description = "Tools for simulating rock slope erosion and the emergent geometry of Richter slopes"
 readme = "README.md"
 classifiers = [
@@ -35,6 +35,12 @@ keywords = [
   "Lax-Friedrichs",
   "Finsler geometry"
 ]
+
+[project.urls]
+homepage = "https://cstarkjp.github.io/ErosionFront"
+repository = "https://github.com/cstarkjp/ErosionFront"
+documentation = "https://cstarkjp.github.io/ErosionFront"
+# "Bug Tracker" = "https://github.com/cstarkjp/ErosionFront"
 
 [[tool.uv.index]]
 name = "testpypi"
