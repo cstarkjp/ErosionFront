@@ -2,9 +2,9 @@
 
 [![](https://github.com/cstarkjp/ErosionFront/actions/workflows/pypi-publish.yml/badge.svg?style=cache-control=no-cache)](https://github.com/cstarkjp/ErosionFront/actions/workflows/pypi-publish.yml)
 
-### Geomorphic Hamiltonian theory
 
-<!-- ### A geomorphic Hamiltonian theory of rock slope erosion and the emergent geometry of Richter-type rock slopes -->
+
+**Summary:** Simulation tools to support a geomorphic, non-convex Hamiltonian theory of rock ramp-cliff retreat and the emergent geometry of Richter-type slopes.
 
 
 <div align="center">
