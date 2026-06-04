@@ -1,11 +1,39 @@
 [project]
 name = "erosionfront"
-version = "0.1.1"
+version = "0.1.8"
 description = "Tools for simulating rock slope erosion and the emergent geometry of Richter slopes"
 readme = "README.md"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Framework :: Jupyter",
+  "Framework :: MkDocs",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: MacOS",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: Microsoft :: Windows",
+  "Topic :: Scientific/Engineering :: Physics",
+]
 requires-python = ">=3.14"
 dependencies = [
     "numpy", "matplotlib", "scipy", "shapely", "rasterio", "ruptures", "h5py"
+]
+authors = [{ name = 'Colin P. Stark', email = 'cstarkjp@gmail.com' }]
+keywords = [
+  "geomorphology",
+  "erosion",
+  "rockslope",
+  "mesa",
+  "butte",
+  "cliff retreat",
+  "Richter slope",
+  "non-convex",
+  "geomorphic Hamiltonian",
+  "Hamilton-Jacobi equation",
+  "level-set",
+  "Lax-Friedrichs",
+  "Finsler geometry"
 ]
 
 [[tool.uv.index]]
