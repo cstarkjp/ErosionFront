@@ -3,7 +3,7 @@
 [![](https://github.com/cstarkjp/ErosionFront/actions/workflows/pypi-publish.yml/badge.svg?style=cache-control=no-cache)](https://github.com/cstarkjp/ErosionFront/actions/workflows/pypi-publish.yml)
 
 
-**Summary:** Simulation tools to support a geomorphic, non-convex Hamiltonian theory of rock ramp-cliff retreat and the emergent geometry of Richter-type slopes.
+**Summary:** Simulation tools in support of a geomorphic, non-convex Hamiltonian theory of rock ramp-cliff retreat and the emergent geometry of Richter-type slopes.
 
 <!-- ### A geomorphic Hamiltonian theory of rock slope erosion -->
 
@@ -19,7 +19,7 @@
 
 ### Abstract
 
-An iconic image of the American West is the desert mesa: a steep cliff, rising above a ramp-like rock slope, capped by a flat bench. This famous landform has long been assumed to develop where strong rock overlies weak, and where rockfall debris suppresses ramp erosion. Such an explanation cannot be true in general, however, because the archetypal geometry can arise even in uniform bedrock with no talus armouring. Here we argue instead that the ramp-cliff shape is an emergent property. Theoretical evidence comes from a simple model of scarp retreat whose combined rates of weathering and surface-normal erosion are written as a slowly varying function of gradient. Model analysis and simulation, using geometric mechanics and level sets, reveal the sharp break in slope to form automatically as a shock solution of a non-convex Hamilton-Jacobi equation (HJE). Erodibility contrasts are not needed to explain this behaviour, but when present they help lock the landform into its classic shape and allow it to persist long-term. These conclusions are vindicated by 3D topographic analysis of differential cliff recession in geologically homogeneous material.
+An iconic image of the American West is the desert mesa: a steep cliff, rising above a ramp-like rock slope, capped by a flat bench. This famous landform has long been assumed to develop where strong rock overlies weak, and where rockfall debris suppresses ramp erosion. Such an explanation cannot be true in general, however, because the archetypal geometry can arise even in uniform bedrock with no talus armouring. Here we argue instead that the ramp-cliff shape is an emergent property. Theoretical evidence comes from a simple model of scarp retreat whose combined rates of weathering and surface-normal erosion are written as a slowly varying function of gradient. Model analysis and simulation, using geometric mechanics and level sets, reveal the sharp break in slope to form automatically as a transient shock solution of a non-convex Hamilton-Jacobi equation. Strong erodibility contrasts are not needed to explain this behaviour, but when present they lock the landform into its classic shape and allow it to persist long-term. These conclusions are vindicated by 3D topographic analysis of differential cliff recession in geologically homogeneous material.
 
 
 ### Level-set solution
