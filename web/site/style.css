@@ -1,0 +1,14 @@
+code.doc-symbol-method::after {
+  content: "method";
+}
+
+code.doc-symbol-function::after {
+  content: "function";
+}
+
+/* For now, do this only locally for the live demos */
+/* table,
+th,
+td {
+  border: none !important;
+} */
